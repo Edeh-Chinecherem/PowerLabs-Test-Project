@@ -1,4 +1,4 @@
-"use client"; // Only for Next.js
+
 
 import { createContext, useState } from 'react';
 import type { ReactNode } from 'react';
