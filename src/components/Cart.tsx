@@ -1,8 +1,8 @@
 "use client"; // Only for Next.js
 
-import React, { useContext } from 'react';
-import { CartContext } from '@/context/CartContext';
-import { CartItem } from '@/types/types';
+import { useContext } from 'react';
+import { CartContext } from '../context/CartContext';
+// import type { CartItem } from '../types/types';
 import { 
   Table, TableBody, TableCell, TableContainer, TableHead, TableRow, 
   Paper, IconButton, Typography, Button 
@@ -12,7 +12,7 @@ import { Add, Remove, Delete } from '@mui/icons-material';
 const Cart = () => {
   const { 
     cart, 
-    addToCart, 
+    // addToCart, 
     removeFromCart, 
     updateQuantity, 
     discount,

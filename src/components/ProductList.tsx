@@ -1,7 +1,8 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { CartContext } from '@/context/CartContext';
-import { Product } from '@/types/types';
-import { Button, Card, CardContent, Typography, Grid, CircularProgress, Alert } from '@mui/material';
+import { useContext, useEffect, useState } from 'react';
+import { CartContext } from "../context/CartContext";
+import type { Product } from "../types/types";
+import { Button, Card, CardContent, Typography, CircularProgress, Alert } from '@mui/material';
+import Grid from '@mui/material/Grid';
 
 const ProductList = () => {
   const { addToCart } = useContext(CartContext)!;
